@@ -8,20 +8,26 @@ public enum Gender {
     /**
      * 男
      */
-    MEN(1),
+    MEN(1, "男"),
     /**
      * 女
      */
-    WOMEN(2),
+    WOMEN(2, "女"),
     /**
      * 未知
      */
-    UNKNOW(0);
+    UNKNOW(0, "未知");
 
     private int type;
+    private String des;
 
-    private Gender(int type) {
+    public String getDes() {
+        return des;
+    }
+
+    private Gender(int type, String des) {
         this.type = type;
+        this.des = des;
     }
 
     public int getType() {

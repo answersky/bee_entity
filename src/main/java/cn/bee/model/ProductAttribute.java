@@ -9,6 +9,7 @@ import java.util.Date;
  */
 public class ProductAttribute implements Serializable {
     private Integer id;
+    private String unit;
     private String length;
     private String width;
     private String height;
@@ -21,6 +22,14 @@ public class ProductAttribute implements Serializable {
     private String originPlace;
     private Date createTime;
     private Date updateTime;
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
 
     public Integer getId() {
         return id;
@@ -130,6 +139,7 @@ public class ProductAttribute implements Serializable {
     public String toString() {
         return "ProductAttribute{" +
                 "id=" + id +
+                ", unit='" + unit + '\'' +
                 ", length='" + length + '\'' +
                 ", width='" + width + '\'' +
                 ", height='" + height + '\'' +

@@ -10,17 +10,44 @@ import java.util.Date;
  */
 public class Product implements Serializable {
     private Integer id;
-    private String productName;
     private String productCode;
+    private String productName;
     private String productType;
+    private String pic;
     private BigDecimal price;
     private Integer inventory;
     private Integer attributeId;
     private Integer picId;
-    private String operator;
     private Integer sort;
+    private String operator;
     private Date createTime;
     private Date updateTime;
+    private ProductAttribute productAttribute;
+    private ProductPic productPic;
+
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
+    public ProductAttribute getProductAttribute() {
+        return productAttribute;
+    }
+
+    public void setProductAttribute(ProductAttribute productAttribute) {
+        this.productAttribute = productAttribute;
+    }
+
+    public ProductPic getProductPic() {
+        return productPic;
+    }
+
+    public void setProductPic(ProductPic productPic) {
+        this.productPic = productPic;
+    }
 
     public Integer getId() {
         return id;
@@ -129,10 +156,13 @@ public class Product implements Serializable {
                 ", inventory=" + inventory +
                 ", attributeId=" + attributeId +
                 ", picId=" + picId +
+                ", pic='" + pic + '\'' +
                 ", operator='" + operator + '\'' +
                 ", sort=" + sort +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", productAttribute=" + productAttribute +
+                ", productPic=" + productPic +
                 '}';
     }
 }
