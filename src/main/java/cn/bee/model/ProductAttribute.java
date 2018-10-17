@@ -17,8 +17,8 @@ public class ProductAttribute implements Serializable {
     private String weight;
     private String des;
     private String producer;
-    private Date produceTime;
-    private Date expireTime;
+    private String produceTime;
+    private String expireTime;
     private String originPlace;
     private Date createTime;
     private Date updateTime;
@@ -95,19 +95,19 @@ public class ProductAttribute implements Serializable {
         this.producer = producer;
     }
 
-    public Date getProduceTime() {
+    public String getProduceTime() {
         return produceTime;
     }
 
-    public void setProduceTime(Date produceTime) {
+    public void setProduceTime(String produceTime) {
         this.produceTime = produceTime;
     }
 
-    public Date getExpireTime() {
+    public String getExpireTime() {
         return expireTime;
     }
 
-    public void setExpireTime(Date expireTime) {
+    public void setExpireTime(String expireTime) {
         this.expireTime = expireTime;
     }
 
