@@ -24,6 +24,15 @@ public class Product implements Serializable {
     private Date updateTime;
     private ProductAttribute productAttribute;
     private ProductPic productPic;
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getPic() {
         return pic;
@@ -149,20 +158,21 @@ public class Product implements Serializable {
     public String toString() {
         return "Product{" +
                 "id=" + id +
-                ", productName='" + productName + '\'' +
                 ", productCode='" + productCode + '\'' +
+                ", productName='" + productName + '\'' +
                 ", productType='" + productType + '\'' +
+                ", pic='" + pic + '\'' +
                 ", price=" + price +
                 ", inventory=" + inventory +
                 ", attributeId=" + attributeId +
                 ", picId=" + picId +
-                ", pic='" + pic + '\'' +
-                ", operator='" + operator + '\'' +
                 ", sort=" + sort +
+                ", operator='" + operator + '\'' +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 ", productAttribute=" + productAttribute +
                 ", productPic=" + productPic +
+                ", status='" + status + '\'' +
                 '}';
     }
 }
