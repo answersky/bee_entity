@@ -55,6 +55,7 @@ public class ProductOperateLog {
 
     @Override
     public String toString() {
+
         return "ProductOperateLog{" +
                 "id=" + id +
                 ", operator='" + operator + '\'' +
