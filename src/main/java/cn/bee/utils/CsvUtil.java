@@ -37,6 +37,15 @@ public class CsvUtil {
         }
     }
 
+    /**
+     * 读取csv文件
+     *
+     * @param titles
+     * @param filePath
+     * @param charset
+     * @return
+     * @throws Exception
+     */
     public static List<Map<String, String>> readCsv(List<String> titles, String filePath, String charset) throws Exception {
         List<Map<String, String>> result = new ArrayList<>();
         InputStream inputStream = new FileInputStream(filePath);
